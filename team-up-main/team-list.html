@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #B4B4B8;
+            color: #333;
+        }
+
+        .filter-section {
+            text-align:left;
+            background-color: #B4B4B8;
+            padding: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .filter-section label {
+            text-size-adjust: px;
+            border: 1px solid #020002;
+            border-radius: 1px;
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .team-box {
+            width: 45%;
+            margin-bottom: 20px;
+            border: 1px solid #E9BEF1;
+            border-radius: 15px;
+            background-color: #FAF1FC;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .team-image {
+            width: 50%;
+            padding: 5px;
+        }
+
+        .team-image img {
+            width: 100%;
+            border-radius: 5%;
+        }
+
+        .team-description {
+            width: 60%;
+            padding: 20px;
+        }
+
+        .team-tags {
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-top: 1px solid #ccc;
+        }
+
+        .filter {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="filter-section">
+        <div class="filter">
+            <label for="location"><strong>Location:</strong></label>
+            <select name="location" id="location">
+                <option value="">All</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Germany">Germany</option>
+            </select>
+
+            <label for="field"><strong>Field:</strong></label>
+            <select name="field" id="field">
+                <option value="">All</option>
+                <option value="AI">AI</option>
+                <option value="Blockchain">Blockchain</option>
+                <option value="AR/VR">AR/VR</option>
+                <option value="IoT">IoT</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Finance">Finance</option>
+                <option value="Education">Education</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="team-section">
+
+        <!-- Team 1 -->
+        <div class="team-box" data-location="USA" data-field="AI">
+            <div class="team-image">
+                <img src="team images/1.png" alt="Team 1">
+            </div>
+            <div class="team-description">
+                <h2>TechGenius</h2>
+                <p><strong>Description:</strong> TechGenius is a team focused on developing cutting-edge technologies for artificial intelligence applications. We are working on AI algorithms for image recognition and natural language processing.</p>
+                <p><strong>Field:</strong> AI</p>
+                <p><strong>Location:</strong> San Francisco, USA</p>
+                <p><strong>Looking for:</strong>  AI engineers, Data scientists, Machine learning experts</p>
+            </div>
+        </div>
+
+        <!-- Team 2 -->
+        <div class="team-box" data-location="USA" data-field="Blockchain">
+            <div class="team-image">
+                <img src="team images/crypto.png" alt="CryptoBuilders">
+            </div>
+            <div class="team-description">
+                <h2>CryptoBuilders</h2>
+                <p><strong>Description:</strong> CryptoBuilders is a blockchain development team dedicated to creating decentralized applications and smart contracts. We are passionate about the future of blockchain technology and its potential to revolutionize various industries.</p>
+                <p><strong>Field:</strong> Blockchain</p>
+                <p><strong>Location:</strong> New York, USA</p>
+                <p><strong>Looking for:</strong> Blockchain Developers, Cryptocurrency Experts, Solidity developers</p>
+            </div>
+        
+        </div>
+
+        <!-- Team3-->
+        <div class="team-box" data-location="Turkey" data-field="AR/VR">
+            <div class="team-image">
+                <img src="team images/AR.png" alt="VirtualRealists">
+            </div>
+            <div class="team-description">
+                <h2>VirtualRealists</h2>
+                <p><strong>Description:</strong> VirtualRealists specializes in developing virtual reality and augmented reality experiences. Our team is working on immersive VR games and AR applications for education and training purposes.</p>
+                <p><strong>Field:</strong> AR/VR</p>
+                <p><strong>Location:</strong> istanbul,Turkey</p>
+                <p><strong>Looking for:</strong> Unity developers, 3D artists, AR/VR designers</p>
+            </div>
+            
+        </div>
+
+        <!-- Team 4-->
+        <div class="team-box" data-location="Netherlands" data-field="IoT">
+            <div class="team-image">
+                <img src="team images/iot.png" alt="IoT Innovators">
+            </div>
+            <div class="team-description">
+                <h2>IoT Innovators</h2>
+                <p><strong>Description:</strong> IoT Innovators is focused on Internet of Things (IoT) solutions for smart cities and connected devices. Our projects include smart home automation, environmental monitoring, and industrial IoT applications.</p>
+                <p><strong>Field:</strong> IoT</p>
+                <p><strong>Location:</strong> Amsterdam, Netherlands</p>
+                <p><strong>Looking for:</strong> IoT engineers, Embedded systems developers, IoT architects</p>
+            </div>
+        
+        </div>
+
+        <!-- Team 5 -->
+        <div class="team-box" data-location="USA" data-field="Healthcare">
+            <div class="team-image">
+                <img src="team images/healt.png" alt=" HealthTech Hub">
+            </div>
+            <div class="team-description">
+                <h2> HealthTech Hub</h2>
+                <p><strong>Description:</strong> HealthTech Hub is dedicated to developing innovative healthcare technologies to improve patient care and medical services. Our projects range from telemedicine platforms to wearable health devices.</p>
+                <p><strong>Field:</strong> Healthcare</p>
+                <p><strong>Location:</strong> Boston, USA</p>
+                <p><strong>Looking for:</strong>   Healthcare IT specialists, Medical device engineers, Bioinformatics experts</p>
+            </div>
+            
+        </div>
+
+        <!-- Team 6 -->
+        <div class="team-box" data-location="USA" data-field="Finance">
+            <div class="team-image">
+                <img src="team images/finance.png" alt="FinTech Wizards">
+            </div>
+            <div class="team-description">
+                <h2>FinTech Wizards</h2>
+                <p><strong>Description:</strong> FinTech Wizards is a team focusing on financial technology solutions, including payment systems, peer-to-peer lending platforms, and robo-advisors. We aim to disrupt the finance industry with innovative fintech products.</p>
+                <p><strong>Field:</strong> Finance</p>
+                <p><strong>Location:</strong>  New York City, USA</p>
+                <p><strong>Looking for:</strong>  FinTech developers, Financial analysts, Blockchain specialists</p>
+            </div>
+
+        </div>
+
+        <!-- Team 7-->
+        <div class="team-box" data-location="Germany" data-field="Education">
+            <div class="team-image">
+                <img src="team images/edu.png" alt="EduInnovate">
+            </div>
+            <div class="team-description">
+                <h2>Eduinnovate</h2>
+                <p><strong>Description:</strong> EduInnovate is committed to revolutionizing education through technology. Our projects include e-learning platforms, educational games, and personalized learning tools.</p>
+                <p><strong>Field:</strong> Education</p>
+                <p><strong>Location:</strong> Berlin, Germany</p>
+                <p><strong>Looking for:</strong> EdTech developers, Instructional designers, Learning experience designers</p>
+            </div>
+            
+        </div>
+
+        <!-- Team 8-->
+        <div class="team-box" data-location="Canada" data-field="Social Impact">
+            <div class="team-image">
+                <img src="team images/social.png" alt="SocialImpact Innovators">
+            </div>
+            <div class="team-description">
+                <h2>Socialimpact Innovators</h2>
+                <p><strong>Description:</strong>SocialImpact Innovators is dedicated to using technology for positive social change. Our projects focus on addressing social issues such as poverty, inequality, and access to education through innovative tech solutions.</p>
+                <p><strong>Field:</strong> Social Impact</p>
+                <p><strong>Location:</strong>  Toronto, Canada</p>
+                <p><strong>Looking for:</strong> Social entrepreneurs, Non-profit leaders, Community organizers</p>
+            </div>
+           
+        </div>
+        
+        <!-- Diğer takımlar buraya eklenebilir -->
+    </div>
+
+    <script>
+        // Filtreleme işlevi
+        document.addEventListener('DOMContentLoaded', function() {
+            const locationFilter = document.getElementById('location');
+            const fieldFilter = document.getElementById('field');
+            const teamBoxes = document.querySelectorAll('.team-box');
+
+            locationFilter.addEventListener('change', filterTeams);
+            fieldFilter.addEventListener('change', filterTeams);
+
+            function filterTeams() {
+                const selectedLocation = locationFilter.value;
+                const selectedField = fieldFilter.value;
+
+                teamBoxes.forEach(function(box) {
+                    const location = box.getAttribute('data-location');
+                    const field = box.getAttribute('data-field');
+
+                    if ((selectedLocation === '' || location === selectedLocation) &&
+                        (selectedField === '' || field === selectedField)) {
+                        box.style.display = 'flex';
+                    } else {
+                        box.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
